@@ -16,6 +16,20 @@ Requires Node.js ≥ 20. Currently macOS only.
 
 Full install instructions: **[cli.flowe.ai/docs/install](https://cli.flowe.ai/docs/install/)**
 
+## Use with Claude Code
+
+`flowe` ships a Claude Code skill that fires resets for you during long thinking pauses. Claude picks the protocol based on what it's observed about your recent state — physiological sigh when you're frustrated, palming when your eyes are tired, body scan when you're overloaded.
+
+If you have flowe-cli installed:
+
+```bash
+flowe install-skill
+```
+
+Or grab the skill file directly: **[SKILL.md](./SKILL.md)** → drop it at `~/.claude/skills/flowe/SKILL.md` (or your project's `.claude/skills/flowe/SKILL.md`).
+
+To opt out of the auto-trigger entirely, set `FLOWE_OPT_OUT=1` in your shell or delete the skill file.
+
 ## Documentation
 
 Everything lives at **[cli.flowe.ai/docs](https://cli.flowe.ai/docs/)**:
